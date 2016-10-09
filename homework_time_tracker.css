@@ -1,0 +1,31 @@
+html {
+    font-family: arial;
+}
+
+.header {
+    height: 100%;
+    text-align: center;
+    background-color: #f1f1f1;
+    font-size: 100%;
+    padding: .5% 1%;
+    border-color: black;
+    border-style: solid;
+    font-family: arial;
+}
+
+.header.bordermod {
+    border-left: none;
+}
+
+.select {
+    height: 100%;
+    width: 19%;
+    font-size: 100%;
+    padding: 1% 0%;
+    border: none;
+    border-radius: 4px;
+    background-color: #f1f1f1;
+    text-align: center;
+    margin-right: .5%;
+    margin-left: .5%;
+}
