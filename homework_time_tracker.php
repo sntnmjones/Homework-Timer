@@ -22,7 +22,7 @@ Click "Time Start" to start timer. Click "Time Stop" to stop timer.
     style="
         border-right: none;
         width: 20%;    
-    ">Instructor</div>
+    ">Assignment</div>
 
     <div id="time_start" class="header"
     onClick="timeStart()" 
@@ -30,20 +30,21 @@ Click "Time Start" to start timer. Click "Time Stop" to stop timer.
         width: 20%;    
     ">Time Start</div>
     
-    <div id="time_stop" class="header bordermod"
-    onClick="timeStop()" 
-    style="
-        width: 20%;    
-    ">Time Stop</div>
-    
     <div class="header bordermod"
     style="
         width: 20%;    
     ">Duration</div>
 
+    <div id="time_stop" class="header bordermod"
+    onClick="timeStop()" 
+    style="
+        width: 20%;    
+    ">Time Stop</div>
+
 </div>
 
-<div style="
+<div id="container" 
+    style="
     display: inline-flex; 
     width: 100%;
     margin-top: .25%;
@@ -57,27 +58,19 @@ Click "Time Start" to start timer. Click "Time Stop" to stop timer.
         <option>CINS370</option>
     </select>
 
-    <select class="select">
-        <option>Instructor...</option>
-        <option>Dr. Tyson Henry</option>
-        <option>Dr. Adam McGown</option>
-        <option>Dr. Adam Meyer</option>
-        <option>Dr. Susan Hubbard</option>
-        <option>Dr. Jaime Raigoza</option>
-    </select>
+    <textarea class="select"
+        rows="1" 
+    >
+    </textarea>
 
-    <div id="time1" class="select">
-        
-    </div>
-
-    <div id="time2" class="select">
-        
-    </div>
-
-    <div id="total" class="select">
-        
-    </div>    
 </div>
+
+<div id="results"
+    style="margin-top: .25%;" 
+>
+    
+</div>
+
 <script type="text/javascript" src="./homework_time_tracker.js"></script>
 </body>
 </html>
