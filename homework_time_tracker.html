@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Homework Time Tracker</title>
+    <link rel="stylesheet" type="text/css" href="./homework_time_tracker.css">
+</head>
+<body>
+Click "Time Start" to start timer. Click "Time Stop" to stop timer.
+<div style="
+    display: flex; 
+    margin-top: .25%;
+    width: 100%;
+    ">
+
+    <div class="header"
+    style="
+
+        width: 20%;
+    ">Class</div>
+
+    <div class="header bordermod"
+    style="
+        border-right: none;
+        width: 20%;    
+    ">Assignment</div>
+
+    <div id="time_start" class="header"
+    onClick="timeStart()" 
+    style="
+        width: 20%;    
+    ">Time Start</div>
+    
+    <div class="header bordermod"
+    style="
+        width: 20%;    
+    ">Duration</div>
+
+    <div id="time_stop" class="header bordermod"
+    onClick="timeStop()" 
+    style="
+        width: 20%;    
+    ">Time Stop</div>
+
+</div>
+
+<div id="container" 
+    style="
+    display: inline-flex; 
+    width: 100%;
+    margin-top: .25%;
+">
+    <select id="course" class="select">
+        <option>Class...</option>
+        <option>CSCI211</option>
+        <option>MATH217</option>
+        <option>MATH121</option>
+        <option>CSCI301</option>
+        <option>CINS370</option>
+    </select>
+
+    <textarea id="assign" class="select"
+        rows="1" 
+    >
+    </textarea>
+
+</div>
+
+<div id="results"
+    style="
+    margin-top: .25%;
+    width: 100%; 
+">
+    
+</div>
+<script type="text/javascript" src="./homework_time_tracker.js"></script>
+
+</body>
+</html>

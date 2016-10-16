@@ -17,6 +17,12 @@ html {
     border-left: none;
 }
 
+.addedDivs {
+    display: inline-flex;
+    width: 100%;
+    margin-top: .25%;
+}
+
 .select {
     height: 100%;
     width: 19%;
