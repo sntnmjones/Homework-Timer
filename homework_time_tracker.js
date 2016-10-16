@@ -80,7 +80,13 @@ function timeStop() {
         divName = 'newDiv' + divNum;
         newContainer.setAttribute('id', divName);
         newContainer.setAttribute('class', 'addedDivs');
-        document.getElementById('results').appendChild(newContainer);
+        if (divNum > 1) {
+            var parentElement = document.getElementById('results');
+            var theFirstChild = parentElement.firstChild;
+            parentElement.insertBefore(newContainer, theFirstChild);
+        }
+        else
+            document.getElementById('results').appendChild(newContainer);
 
         var div = document.createElement('div');
         div.setAttribute('class', 'select');
